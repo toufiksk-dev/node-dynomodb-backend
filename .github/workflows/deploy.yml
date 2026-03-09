@@ -96,7 +96,7 @@ jobs:
            
             # Stop existing process
             echo "Stopping existing process..."
-            pkill -f "node server.js" || true
+            pm2 restart server || pm2 start server.js --name server
             sleep 2
            
             # Start new process in background
