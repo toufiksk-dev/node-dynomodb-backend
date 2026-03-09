@@ -14,7 +14,7 @@ app.use(express.json());
 app.use("/contacts", contactRoutes);
 app.use("/products", productRoutes);
 app.get("/", (req, res) => {
-  res.send("DynamoDB Node API Server is running.. ");
+  res.send("DynamoDB Node API Server is okay.. ");
 });
 
 const PORT = process.env.PORT || 8000;
